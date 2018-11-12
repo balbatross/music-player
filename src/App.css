@@ -1,5 +1,21 @@
+html, body, #root{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
 .App {
-  text-align: center;
+  width: 100vw;
+  display: flex;
+}
+
+.genres{
+  height: 100vh;
+  width: 30%;
+}
+.songs{
+  height: 100vh;
+  width: 70%;
 }
 
 .App-logo {
