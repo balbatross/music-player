@@ -1,0 +1,15 @@
+.genre-list {
+    list-style: none;
+    height: 100vh;
+    overflow: scroll;
+}
+
+.genre-list > li {
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+.genre-list > li:hover{
+    background: #dfdfdf;
+}

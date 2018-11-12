@@ -1,0 +1,10 @@
+.song-player{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.song-player img {
+    height: 100%;
+    width: auto;
+}

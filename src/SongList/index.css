@@ -1,0 +1,22 @@
+.song-list {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 500px;
+}
+
+.song-list ul {
+    list-style: none;
+    height: 100vh;
+    overflow: scroll;
+}
+
+.song-list ul li {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.song-list ul li:hover{
+    background: #dfdfdf;
+}

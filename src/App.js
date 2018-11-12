@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import Song from './Song';
+import GenreList from './GenreList';
+import SongList from './SongList';
 import './App.css';
 
 class App extends Component {
@@ -40,18 +42,15 @@ class App extends Component {
     return (
       <div className="App">
         <div className="genres">
-          {this.state.genres.map((x) => {
-            return (
-              <div onClick={this.selectGenre.bind(this, x)}>{x}</div>
-            );
-          })}
+            <GenreList onSelect={(genre) => this.selectGenre(genre)} genres={this.state.genres} />
         </div>
         <div className="songs">
-          {this.state.songs.map((x) => {
-            return (
-              <Song id={x.id} title={x.title}/>
-            );
-          })}
+            <div className="player">
+                <Song song={this.state.selectedSong} />
+            </div>
+            <div className="playlist">
+                <SongList tracks={this.state.songs} onSelect={(song) => this.setState({selectedSong: song})}/>
+            </div>
         </div>
       </div>
     );
