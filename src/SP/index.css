@@ -1,0 +1,89 @@
+.sp-player{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex: 1;
+    flex-direction: row;
+}
+
+.sp-player .side-menu{
+    flex: 0.2;
+    display: flex;
+    flex-direction: column;
+}
+
+.sp-player .side-menu .genre-list {
+    overflow: scroll;
+
+}
+
+.sp-player .main-content {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+}
+
+.sp-player .main-content ul{
+    list-style: none;
+}
+
+.artist-name {
+    margin-left: 10px;
+}
+
+.sp-player .main-content ul li{
+    padding: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.sp-player .main-content ul li:hover{
+    background: #dfdfdf;
+}
+
+.sp-player .main-content ul li img{
+    height: 50px;
+    width: 50px;
+}
+
+.sp-player .search{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex: 0.2;
+    flex-wrap: wrap;
+    overflow: scroll;
+    
+
+}
+
+.sp-player .results{
+    flex: 0.8;
+
+}
+
+.sp-player .search input{
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+
+.sp-player .genre-selector {
+    cursor: pointer;
+    display: inline-block;
+    color: white;
+    background: #7d7d7d;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
