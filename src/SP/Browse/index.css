@@ -1,0 +1,78 @@
+
+.album-list {
+  height: 200px;
+  display: flex;
+}
+
+.album-list ul {
+  padding: 0;
+  margin: 0;
+  flex: 1;
+  overflow-x: scroll;
+
+  flex-direction: row;
+
+  display: flex;
+}
+
+.album-list ul li{
+  height: 180px;
+  width: 180px;
+}
+
+.album-list ul li img {
+  width: 150px;
+  height: 150px;
+}
+
+.content {
+  flex: 1;
+  height: calc(100vh - 50px);
+  display: flex;
+ overflow-y: scroll;
+  overflow-x: none;
+}
+  
+.content ul{
+  list-style: none;
+}
+
+.content ul li img {
+  height: 50px;
+  width: 50px;
+}
+
+.content ul li {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.content ul li:hover{
+  background: #dfdfdf;
+}
+
+.side-menu{
+  border-right: 1px solid black;
+  width: 300px;
+  height: calc(100vh - 50px);
+}
+
+.side-menu .search input{
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  outline: none;
+  height: 50px;
+  font-size: 30px;
+}
+
+.side-menu ul li {
+  display: inline-block;
+}
+
+.browser{
+  display: flex;
+  flex:1;
+}

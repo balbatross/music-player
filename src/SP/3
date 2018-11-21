@@ -1,0 +1,21 @@
+.sp-player {
+  flex-direction: column;
+}
+
+.sp-player .sp-header ul {
+  list-style: none;
+  display: flex;
+}
+
+.sp-player .sp-header ul li {
+ margin-right: 5px;
+}
+
+.sp-player .sp-header {
+  background: black;
+  color: white;
+}
+
+.sp-content {
+
+}

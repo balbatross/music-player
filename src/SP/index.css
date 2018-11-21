@@ -3,11 +3,9 @@
     height: 100%;
     width: 100%;
     flex: 1;
-    flex-direction: row;
 }
 
 .sp-player .side-menu{
-    flex: 0.2;
     display: flex;
     flex-direction: column;
 }
@@ -50,29 +48,10 @@
     width: 50px;
 }
 
-.sp-player .search{
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    flex: 0.2;
-    flex-wrap: wrap;
-    overflow: scroll;
-    
-
-}
 
 .sp-player .results{
     flex: 0.8;
 
-}
-
-.sp-player .search input{
-    height: 50px;
-    width: 200px;
-    border-radius: 10px;
 }
 
 

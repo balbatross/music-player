@@ -1,7 +1,7 @@
 import React, {
     Component
 } from 'react';
-
+import AppFrame from './AppFrame';
 
 import './index.css';
 
@@ -47,23 +47,20 @@ export default class SpotifyPlayer extends Component {
         })
     }
 
-    _renderArtists(){
-        return this.state.artists.map((x) => {
-            return (
-                <li>
-                
-                {x.images.length > 0 ? <img src={x.images[0].url} /> : ""}
-                
-                <div className="artist-name">{x.name}</div>
-                
-                </li>
-            )
-        })
-    }
 
     render(){
         return (
-            <div className="sp-player">
+          <AppFrame>
+
+          </AppFrame>
+        );
+    }
+
+}
+
+/*
+
+      {/*<div className="sp-player">
                 <div className="side-menu">
                         <input placeholder="Search" type="text" onChange={(e) => this.setState({search: e.target.value})}></input>
                         <div className="genre-list">
@@ -79,8 +76,5 @@ export default class SpotifyPlayer extends Component {
 
                     </ul>
                 </div>
-            </div>
-        );
-    }
+            </div>*/
 
-}

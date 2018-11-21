@@ -1,0 +1,28 @@
+.sp-player {
+  flex-direction: column;
+  flex: 1;
+}
+
+.sp-player .sp-header ul {
+  list-style: none;
+  display: flex;
+}
+
+.sp-player .sp-header ul li {
+ margin-right:10px;
+ cursor: pointer;
+}
+
+.sp-player .sp-header ul li.selected{
+  background: #dfdfdf;
+}
+
+.sp-player .sp-header {
+  background: black;
+  color: white;
+}
+
+.sp-content {
+  flex: 1;
+  display: flex;
+}
